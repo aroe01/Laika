@@ -1,0 +1,5 @@
+/Users/Adrian/Projects/Yousful/Android/obj/Debug/MonoAndroid,Version=v4.0.3.AssemblyAttribute.cs
+/Users/Adrian/Projects/Yousful/Android/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/Adrian/Projects/Yousful/Android/bin/Debug/Xamarin.Forms.Platform.Android.dll
+/Users/Adrian/Projects/Yousful/Android/bin/Debug/Xamarin.Forms.Core.dll
+/Users/Adrian/Projects/Yousful/Android/bin/Debug/Xamarin.Forms.Xaml.dll

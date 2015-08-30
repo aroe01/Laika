@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Yousful", "Yousful\Yousful.shproj", "{DC0BA39A-B970-498F-955E-A758AE6DA1D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yousful.iOS", "iOS\Yousful.iOS.csproj", "{09D0F9BF-2A18-4458-82C3-53A4667257FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Release|iPhone.Build.0 = Release|iPhone
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{09D0F9BF-2A18-4458-82C3-53A4667257FA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = iOS\Yousful.iOS.csproj
+	EndGlobalSection
+EndGlobal

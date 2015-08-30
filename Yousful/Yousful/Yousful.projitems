@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{DC0BA39A-B970-498F-955E-A758AE6DA1D9}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Yousful</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calendar\CalendarPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calendar\CalendarEventEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calendar\EventCreatePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Contracts\BusinessEntityBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Contracts\IBusinessEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\DotNet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MapPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MonkeyAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RootViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calendar\ImageViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Events\Event.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Events\EventDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Events\EventManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Events\EventRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Users\UserRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Users\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Users\UserManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DB\Users\UserDatabase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Calendar\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Transactions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Map\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DB\Events\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DB\Users\" />
+  </ItemGroup>
+</Project>
