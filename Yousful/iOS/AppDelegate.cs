@@ -19,6 +19,7 @@ using Newtonsoft.Json.Linq;
 using Yousful.Map;
 using Yousful.Calendar;
 using Yousful.BL;
+using Yousful.BL.Managers;
 using Yousful.Transactions;
 
 namespace Yousful.iOS {
@@ -184,6 +185,9 @@ namespace Yousful.iOS {
 				BL.Managers.EventManager.DeleteEvent(savedEvent.ID);
 			}
 		}
+		void InitUser(){
+			UserManager.CurrentUser = new BL.User ();
+		}
 		void ShowMap(){
 			UIViewController main = MakeHome ();
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
@@ -195,6 +199,8 @@ namespace Yousful.iOS {
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
+			InitUser ();
+
 			ClearAllEvents ();
 
 			//DotNet.Instance = new DotNet (this);

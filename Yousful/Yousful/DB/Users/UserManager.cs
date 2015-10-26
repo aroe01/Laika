@@ -6,6 +6,7 @@ namespace Yousful.BL.Managers
 {
 	public static class UserManager
 	{
+		public static User CurrentUser;
 
 		static UserManager ()
 		{

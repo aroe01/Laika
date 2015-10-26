@@ -135,6 +135,7 @@
     <BundleResource Include="Resources\Assets\myprofile.jpg" />
     <BundleResource Include="Resources\Assets\Image.png" />
     <BundleResource Include="Resources\.DS_Store" />
+    <BundleResource Include="Resources\Assets\rsz_11space_dog.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Assets\" />
@@ -142,6 +143,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\MapPage.xib" />
     <InterfaceDefinition Include="Resources\RootViewController.xib" />
+    <InterfaceDefinition Include="Resources\ImageView.xib" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="json.net">

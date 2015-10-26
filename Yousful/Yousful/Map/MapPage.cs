@@ -21,10 +21,10 @@ namespace Yousful.Map
 		//UITabBarController tabController{get; set;}
 
 		[Outlet]
-		UITabBar bottomBar {get; set;}
+		UIView bottomBar {get; set;}
 
 		[Outlet]
-		UITabBarItem testButton {get; set;}
+		UIButton turnUp {get; set;}
 
 		MyMapDelegate mapDel;
 		LocationDelegate locationDel;
@@ -101,7 +101,7 @@ namespace Yousful.Map
 			map.ShowsUserLocation = true;
 			//locationManager.StartMonitoringSignificantLocationChanges ();
 			locationManager.StartUpdatingLocation ();
-		
+			NavigationItem.Title = "Laika";
 
 			//nav bar
 			createEventButton = new UIBarButtonItem (
@@ -122,7 +122,24 @@ namespace Yousful.Map
 					this.CancelCreationMode();
 				}
 			);	
-
+			turnUp.TouchUpInside +=  (sender, ea) => {
+				//new UIAlertView("Touch2", "TouchUpInside handled", null, "OK", null).Show();
+				if(this.currentMode == Mode.CREATE_NEW){
+					this.CancelCreationMode();
+				}else{
+					this.EnableCreationMode();
+				}
+				
+			};
+			UIImage logoImage = UIImage.FromFile ("Assets/rsz_11space_dog.jpg");
+			logoImage = logoImage.ImageWithRenderingMode (UIImageRenderingMode.AlwaysOriginal);
+			UIBarButtonItem logo = new UIBarButtonItem(
+				logoImage,
+				UIBarButtonItemStyle.Plain,
+				(s,e) => {
+				}
+			);
+			NavigationItem.SetLeftBarButtonItem (logo, false);
 
 			// set map type and show user location
 			map.MapType = MKMapType.Standard;
@@ -186,7 +203,7 @@ namespace Yousful.Map
 
 			if (this.currentMode == Mode.VIEW) {
 				this.ShowActiveEvents ();
-				NavigationItem.SetRightBarButtonItem (createEventButton, false);
+				//NavigationItem.SetRightBarButtonItem (createEventButton, false);
 			} else {
 
 				//NavigationItem.SetLeftBarButtonItem (cancelButton, false);
@@ -222,13 +239,15 @@ namespace Yousful.Map
 		}
 			
 		protected void CancelCreationMode(){
-			NavigationItem.LeftBarButtonItem = null;
-			NavigationItem.SetRightBarButtonItem (createEventButton, false);
+			this.currentMode = Mode.VIEW;
+			//NavigationItem.LeftBarButtonItem = null;
+			//NavigationItem.SetRightBarButtonItem (createEventButton, false);
 			this.HidePotentialLocationPin ();
 		}
 		protected void EnableCreationMode(){
-			NavigationItem.SetLeftBarButtonItem (cancelButton, false);
-			NavigationItem.RightBarButtonItem = null;
+			this.currentMode = Mode.CREATE_NEW;
+			//NavigationItem.SetLeftBarButtonItem (cancelButton, false);
+			//NavigationItem.RightBarButtonItem = null;
 			this.ShowPotentialLocationPin ();
 		}
 

@@ -56,7 +56,7 @@ namespace Yousful
 			/*var chatContent = new RootElement ("Image View") {
 				new Section("Img: "){}
 			};*/
-			this.PushViewController( new ImageViewController (this, eventId),true);
+			this.PushViewController( new EventRoomViewController (this, eventId),true);
 
 		}
 
@@ -117,7 +117,23 @@ namespace Yousful
 			BL.Managers.EventManager.SaveEvent (currentEvent);
 
 		}
+		public void AddUserToEvent(int eventId, User userToAdd){
 
+			Console.WriteLine ("Adding User");
+
+			BL.Event currentEvent = BL.Managers.EventManager.GetEvent (eventId);
+
+			string[] userIds = JsonConvert.DeserializeObject<string[]> (currentEvent.UserIds);
+			List<string> stringList = userIds.ToList();
+
+			stringList.Add (userToAdd.ID.ToString());
+			string urlsString = JsonConvert.SerializeObject (stringList.ToArray());
+			currentEvent.UserIds = urlsString;
+
+			Console.WriteLine ("UserIds: " + urlsString);
+			BL.Managers.EventManager.SaveEvent (currentEvent);
+
+		}
 	}
 }
 

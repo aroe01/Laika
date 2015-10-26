@@ -1,39 +1,10 @@
 ﻿<Properties StartupItem="iOS/Yousful.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Yousful/Map/MapPage.cs">
     <Files>
-      <File FileName="Yousful/Map/MapPage.cs" Line="1" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Yousful/Calendar/EventCreatePage.cs" Line="1" Column="1" />
-      <File FileName="iOS/DotNetIOS.cs" Line="1" Column="1" />
-      <File FileName="Yousful/Transactions/DotNet.cs" Line="1" Column="1" />
-      <File FileName="Yousful/DB/EventDatabase.cs" Line="1" Column="1" />
-      <File FileName="Yousful/DB/Event.cs" Line="1" Column="1" />
-      <File FileName="Yousful/Calendar/ImageViewController.cs" Line="1" Column="1" />
-      <File FileName="Yousful/Calendar/CalendarPage.cs" Line="1" Column="1" />
-      <File FileName="iOS/Main.cs" Line="22" Column="1" />
+      <File FileName="Yousful/Map/MapPage.cs" Line="134" Column="56" />
+      <File FileName="Yousful/RootViewController.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Yousful" expanded="True">
-            <Node name="Yousful" expanded="True">
-              <Node name="DB" expanded="True" />
-              <Node name="Map" expanded="True" />
-              <Node name="Transactions" expanded="True" />
-            </Node>
-            <Node name="Yousful.iOS" expanded="True">
-              <Node name="References" selected="True" />
-              <Node name="ComponentReferenceFolder" expanded="True" />
-              <Node name="Packages" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="Assets" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

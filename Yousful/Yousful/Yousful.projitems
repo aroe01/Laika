@@ -20,7 +20,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Map\MapPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Map\MonkeyAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RootViewController.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Calendar\ImageViewController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DB\Events\Event.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DB\Events\EventDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DB\Events\EventManager.cs" />
@@ -29,6 +28,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)DB\Users\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DB\Users\UserManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DB\Users\UserDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calendar\EventRoomViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Calendar\" />
